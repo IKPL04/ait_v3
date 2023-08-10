@@ -1,0 +1,155 @@
+
+/* комбінація класів */
+
+
+/* text та lesson */
+/*.text,
+.lesson{
+color: rgb(94, 197, 198);
+}*/
+
+/* text та lesson ОДНОЧАСНО!!! */
+/*.text.lesson{
+   color: rgb(71, 13, 124);
+}*/
+
+/* вкладеність класів */
+/*.text .lesson{
+   color: rgb(71, 13, 124);
+}*/
+
+
+/*---------------- ПРІОРІТЕТ СЕЛЕКТОРІВ ------------------ */
+/* основні правила формування пріорітетів: 
+1) у випадку РІВНОЗНАЧНИХ селекторів, більший пріорітет завжди буде в останього по коду.
+2) юільший пріорітет завжди буде у селекторів, якиц звужує (уточнює, конкретизує) пошук (запит).
+чим більше ми уточнюємо запит - тим він пріорітетніше в коді.
+3)пріортет у рядкових (inline) стилів ( атрибут style="")
+вищий ніж у стилів з окремого файлу (наприклад style.css)
+4)флаг important! перезаписує пріорітет (не рекомендується)
+*/
+
+
+/* замітка від себе: це більш конкретизує
+*/
+/*#ipsum{
+   color: blueviolet;
+}*/
+
+
+
+/*p{
+   color: red;
+}*/
+
+
+/*.text{
+   color: blue;
+}*/
+
+
+/*.text-block p{
+   color: brown;
+}
+
+p{
+   color: blue;
+}*/
+
+/* замітка від себе: це більш конкретизує
+*/
+/*#ipsum{
+   color: #27f064;
+}*/
+
+
+/* замітка від себе: це більш конкретизує
+*/
+/* чим більше ми уточнюємо запит - тим він пріорітетніше в коді.
+ типу ось тут по наростаючій було(з низу дивитись) */
+/*p.text.lesson{
+   color: greenyellow;
+}
+
+.text{
+   color: aquamarine;
+}
+
+p{
+   color: brown;
+}*/
+
+/* ================= */
+/* 
+../ - вийти з папки на один рівень вище
+*/
+/* ================= */
+
+
+/* ----------------------пфдключення шрифтів ------------------ */
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap");
+
+
+@font-face {
+   
+   font-family: "CircularStd";
+   src: url("../fonts/CircularStd-Book.woff2") format(woff2),
+   url("../fonts/CircularStd-Book.woff") format(woff);
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   
+   font-family: "CircularStd";
+   src: url("../fonts/CircularStd-Medium.woff2") format(woff2),
+   url("../fonts/CircularStd-Medium.woff") format(woff);
+   font-display: swap;
+   font-weight: 500;
+   font-style: normal;
+
+}
+
+@font-face {
+   
+   font-family: "CircularStd";
+   src: url("../fonts/CircularStd-Bold.woff2") format(woff2),
+   url("../fonts/CircularStd-Bold.woff") format(woff);
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+
+}
+
+@font-face {
+   
+   font-family: "CircularStd";
+   src: url("../fonts/CircularStd-Black.woff2") format(woff2),
+   url("../fonts/CircularStd-Black.woff") format(woff);
+   font-display: swap;
+   font-weight: 900;
+   font-style: normal;
+
+}
+
+body{
+   font-family: "CircularStd";
+   
+}
+
+.title{
+   font-family:"Qwitcher Grypen";
+}
+
+
+
+/*  ------------------- css-властиості шрифтів ---------------- */
+
+
+
+
+/*  ------------------- css-властиіості тексту ---------------- */
